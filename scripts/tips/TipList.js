@@ -11,6 +11,6 @@ export const TipComponents = () => {
   const tipList = document.querySelector(".tip-list");
   tipList.innerHTML = "<h1>Tips</h1>";
 
-  allTips.forEach((tipObj, i) => tipList.innerHTML += Tip(tipObj, i));
+  allTips.forEach((tipObj) => tipList.innerHTML += Tip(tipObj));
   
 }
