@@ -11,7 +11,7 @@ export const FishComponents = () => {
   const fishList = document.querySelector(".fish-list");
   fishList.innerHTML = "<h1>Harvested Fish</h1>";
 
-  allTheFish.forEach((fishObj, i) => fishList.innerHTML += Fish(fishObj, i));
+  allTheFish.forEach((fishObj) => fishList.innerHTML += Fish(fishObj));
   
   /*
     Push components to DOM using forEach()
