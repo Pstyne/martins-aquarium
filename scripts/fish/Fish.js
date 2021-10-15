@@ -1,8 +1,8 @@
 // Fish Component
 
-export const Fish = (fishObj, i) => {
+export const Fish = (fishObj) => {
   return `
-    <div id="fish-${i}" class="fish-card">
+    <div id="fish-${fishObj.id}" class="fish-card">
       <div class="fish__name">Name: ${fishObj.name}</div>
       <div class="fish__location">Location: ${fishObj.location}</div>
       <div class="fish__species">Species: ${fishObj.species}</div>

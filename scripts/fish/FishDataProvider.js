@@ -2,6 +2,7 @@
 
 const fishCollection = [
   {
+    id: 1,
     name: "George",
     species: "Gold Fish",
     diet: "seaweed",
@@ -9,6 +10,7 @@ const fishCollection = [
     location: "New River"
   },
   {
+    id: 2,
     name: "Sally Slappers",
     species: "Brown Trout",
     diet: "Protien",
@@ -16,6 +18,7 @@ const fishCollection = [
     location: "Coal River"
   },
   {
+    id: 3,
     name: "Zucky",
     species: "Slaughterfish",
     diet: "Unprotected Data",
@@ -23,6 +26,7 @@ const fishCollection = [
     location: "De Nile River"
   },
   {
+    id: 4,
     name: "Jeff Bezos",
     species: "Siren",
     diet: "The souls of the wealthy",

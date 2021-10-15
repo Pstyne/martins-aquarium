@@ -1,7 +1,10 @@
 // Tip Component
 
-export const Tip = (tipObj, i) => {
+export const Tip = (tipObj) => {
   return `
-    Tip Component
+    <div id="tip-${tipObj.id}" class="tip-card">
+      <div>${tipObj.content}</div>
+      <div>${tipObj.author}</div>
+    </div>
   `;
 }

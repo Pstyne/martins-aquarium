@@ -11,6 +11,10 @@ export const LocationComponents = () => {
   const locationList = document.querySelector(".location-list");
   locationList.innerHTML = "<h1>Locations</h1>";
 
-  allLocations.forEach((locationObj, i) => locationList.innerHTML += Location(locationObj, i));
+  // allLocations.forEach((locationObj, i) => locationList.innerHTML += Location(locationObj, i));
+
+  for (const place of allLocations) {
+    locationList.innerHTML += Location(place);
+  }
   
 }

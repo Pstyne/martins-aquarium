@@ -1,7 +1,12 @@
 // Location Component
 
-export const Location = (locationObj, i) => {
+export const Location = (locationObj) => {
   return `
-    Location Component
+    <div id="location-${locationObj.id}" class="location-card">
+      <div>${locationObj.name}</div>
+      <div>${locationObj.city}</div>
+      <div>${locationObj.state}</div>
+      <div>${locationObj.country}</div>
+    </div>
   `;
 }
