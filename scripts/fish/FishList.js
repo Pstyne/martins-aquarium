@@ -1,6 +1,6 @@
 // Import Data and do something with it
 
-import { useFish } from './FishDataProvider.js';
+import { useFish, mostHolyFish, soldierFish, nonHolyFish } from './FishDataProvider.js';
 import { Fish } from './Fish.js';
 
 const allTheFish = useFish();
@@ -11,7 +11,14 @@ export const FishComponents = () => {
   const fishList = document.querySelector(".fish-list");
   fishList.innerHTML = "<h1>Harvested Fish</h1>";
 
-  allTheFish.forEach((fishObj) => fishList.innerHTML += Fish(fishObj));
+  // Put the results from each function into one array and flatten them to create a 1d array
+  // The unique function is something I created in the fish data provider
+  // It's removing fish from the array that are duplicated by their id
+  const orderedFish = [mostHolyFish(), soldierFish(), nonHolyFish()].flat().unique();
+
+  orderedFish.forEach((fishObj) => fishList.innerHTML += Fish(fishObj));
+
+  // allTheFish.forEach((fishObj) => fishList.innerHTML += Fish(fishObj));
   
   /*
     Push components to DOM using forEach()

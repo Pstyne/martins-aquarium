@@ -5,8 +5,6 @@ import { Location } from './Location.js';
 
 const allLocations = useLocations();
 
-console.log(allLocations);
-
 export const LocationComponents = () => {
   const locationList = document.querySelector(".location-list");
   locationList.innerHTML = "<h1>Locations</h1>";
